@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>IPython/Jupyter Notebook Previewer</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1">
+        <script type="text/javascript" src="js/vendor/es5-shim.min.js"></script>
+        <script type="text/javascript" src="js/vendor/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="js/vendor/marked.min.js"></script>
+        <script type="text/javascript" src="js/vendor/ansi_up.min.js"></script>
+        <script type="text/javascript" src="js/vendor/prism.min.js"></script>
+        <script type="text/javascript" src="js/vendor/notebook.min.js"></script>
+        <link rel="stylesheet" href="css/vendor/prism.css" />
+        <link rel="stylesheet" href="css/vendor/notebook.css" />
+        <link rel="stylesheet" href="css/nbpreview.css" />
+    </head>
+    <body>
+        <div id="main">
+            <div id="controls">
+                <div id="header">IPython/Jupyter Notebook Previewer</div>
+                <input type="file" id="file">
+            </div>
+            <div id="notebook-holder"></div>
+            <div id="footer">
+                <a href="https://github.com/jsvine/nbpreview">See the <code>nbpreview</code> code on GitHub</a>.
+            </div>
+        </div>
+        <script src="js/nbpreview.js"></script>
+    </body>
+</html>
