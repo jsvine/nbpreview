@@ -6,24 +6,13 @@ You can use [__this hosted version__](https://jsvine.github.io/nbpreview/) or `g
 
 ## Running Your Own NBPreview
 
-To run NBPreview on your own computer, clone this repository:
+To run NBPreview on your own computer, clone or [download](archive/master.zip) this repository, and then open `index.html`.
 
-```sh
-git clone https://github.com/jsvine/nbpreview.git
-```
-
-... start a local server in the cloned directory:
-
-```sh
-cd nbpreview
-python -m SimpleHTTPServer 8000
-```
-
-... and then open `http://localhost:8000` in your web browser.
+Alternatively, you can run a local server by executing `python -m SimpleHTTPServer 8000` in the `nbpreview` directory, after which you can visit [http://localhost:8000](http://localhost:8000).
 
 ## MathJax
 
-NBPreview doesn't come packaged with support for MathJax (so that, by default NBPreview doesn't connect to any third-party servers), but it's easy to add. In `index.html`'s `<head>` tag, insert:
+NBPreview doesn't come packaged with support for MathJax (so that, by default, NBPreview doesn't connect to any third-party servers), but it's easy to add. In `index.html`'s `<head>` tag, insert:
 
 ```html
 <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
