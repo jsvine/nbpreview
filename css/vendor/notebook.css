@@ -4,7 +4,8 @@
 
 .nb-stdout, .nb-stderr {
     white-space: pre;
-    padding: 0.5em;
+    margin: 1em 0;
+    padding-top: 0.1em;
 }
 
 .nb-stderr {
