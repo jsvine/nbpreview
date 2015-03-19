@@ -12,26 +12,7 @@ Alternatively, you can run a local server by executing `python -m SimpleHTTPServ
 
 ## MathJax
 
-NBPreview doesn't come packaged with support for MathJax (so that, by default, NBPreview doesn't connect to any third-party servers), but it's easy to add. In `index.html`'s `<head>` tag, insert:
-
-```html
-<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-    tex2jax: {
-        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
-        processEscapes: true,
-        processEnvironments: true
-    },
-    displayAlign: 'center',
-    "HTML-CSS": {
-        styles: {'.MathJax_Display': {"margin": 0}},
-        linebreaks: { automatic: true }
-    }
-});
-</script>
-```
+NBPreview currently doesn't support MathJax. Implementation suggestions welcome.
 
 ## Built on ...
 
