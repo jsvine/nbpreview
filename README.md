@@ -12,7 +12,7 @@ Alternatively, you can run a local server by executing `python -m SimpleHTTPServ
 
 ## MathJax
 
-NBPreview currently doesn't support MathJax. Implementation suggestions welcome.
+NBPreview currently doesn't support MathJax. (Markdown-parsing was interfering was causing problems.) Implementation suggestions welcome.
 
 ## Built on ...
 
