@@ -3,9 +3,9 @@
 }
 
 .nb-stdout, .nb-stderr {
-    white-space: pre;
+    white-space: pre-wrap;
     margin: 1em 0;
-    padding-top: 0.1em;
+    padding: 0.1em 0.5em;
 }
 
 .nb-stderr {
