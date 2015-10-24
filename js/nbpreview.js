@@ -12,12 +12,36 @@
         Prism.highlightAll();
     };
 
-    $file_input.onchange = function (e) {
+    var load_file = function (file) {
         var reader = new FileReader();
         reader.onload = function (e) {
             var parsed = JSON.parse(this.result);
             render_notebook(parsed);
         };
-        reader.readAsText(this.files[0]);
+        reader.readAsText(file);
     };
+
+    $file_input.onchange = function (e) {
+        load_file(this.files[0]);
+    };
+
+    window.addEventListener('dragover', function (e) {
+        e.stopPropagation();
+        e.preventDefault();
+        e.dataTransfer.dropEffect = 'copy'; // Explicitly show this is a 
+        root.document.body.style.opacity = 0.5;
+    }, false);
+
+    window.addEventListener('dragleave', function (e) {
+        root.document.body.style.opacity = 1;
+    }, false);
+
+    window.addEventListener('drop', function (e) {
+        e.stopPropagation();
+        e.preventDefault();
+        load_file(e.dataTransfer.files[0]);
+        $file_input.style.display = "none";
+        root.document.body.style.opacity = 1;
+    }, false);
+
 }).call(this);
