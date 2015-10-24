@@ -37,6 +37,14 @@
     position: relative;    
 }
 
+.nb-raw-cell {
+    white-space: pre-wrap;
+    background-color: #f5f2f0;
+    font-family: Consolas, Monaco, 'Andale Mono', monospace;
+    padding: 1em;
+    margin: .5em 0;
+}
+
 .nb-output {
     min-height: 1em;    
 }
