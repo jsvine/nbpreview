@@ -10,16 +10,13 @@ To run NBPreview on your own computer, clone or [download](archive/master.zip) t
 
 Alternatively, you can run a local server by executing `python -m SimpleHTTPServer 8000` in the `nbpreview` directory, after which you can visit [http://localhost:8000](http://localhost:8000).
 
-## MathJax
-
-NBPreview currently doesn't support MathJax. Implementation suggestions welcome. (Markdown-parsing was interfering with prior attempts.)
-
 ## Built on ...
 
 - [notebookjs](https://github.com/jsvine/notebookjs), for notebook-rendering
 - [prism](http://prismjs.com/), for code-highlighting
 - [marked](https://github.com/chjj/marked), for markdown-rendering
 - [ansi_up](https://github.com/drudru/ansi_up), for ANSI-rendering
+- [katex](https://github.com/KaTeX/KaTeX), for math typesetting
 - [es5-shim](https://github.com/es-shims/es5-shim), for JavaScript compatibility
 
 ## Contributing
