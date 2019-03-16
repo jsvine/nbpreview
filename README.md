@@ -1,14 +1,14 @@
-# NBPreview
+# nbpreview
 
-NBPreview is a [IPython](http://ipython.org/)/[Jupyter](http://jupyter.org/) notebook previewer. It does not require an internet connection, or even having IPython/Jupyter installed.
+`nbpreview` is a [Jupyter](http://jupyter.org/)/[IPython](http://ipython.org/) notebook previewer. It does not require an internet connection, or even having Jupyter/IPython installed.
 
 You can use [__this hosted version__](https://jsvine.github.io/nbpreview/) or `git clone` your own. Just drag-and-drop your `.ipynb` file onto the filepicker, and *voilà!*
 
-## Running Your Own NBPreview
+## Local / Offline Usage
 
-To run NBPreview on your own computer, clone or [download](archive/master.zip) this repository, and then open `index.html`.
+To run `nbpreview` on your own computer, clone or [download](archive/master.zip) this repository, and then open `index.html`.
 
-Alternatively, you can run a local server by executing `python -m SimpleHTTPServer 8000` in the `nbpreview` directory, after which you can visit [http://localhost:8000](http://localhost:8000).
+Alternatively, you can run a local server by executing `python3 -m http.server 8000` in the `nbpreview` directory, after which you can visit [http://localhost:8000](http://localhost:8000).
 
 ## Built on ...
 
@@ -21,4 +21,4 @@ Alternatively, you can run a local server by executing `python -m SimpleHTTPServ
 
 ## Contributing
 
-Pull requests are welcome and appreciated.
+Contributions are welcome. If you'd like to suggest a new feature, please open an issue to discuss the proposal before submitting a pull request.
