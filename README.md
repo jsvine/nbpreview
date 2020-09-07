@@ -13,6 +13,7 @@ Alternatively, you can run a local server by executing `python3 -m http.server 8
 ## Built on ...
 
 - [notebookjs](https://github.com/jsvine/notebookjs), for notebook-rendering
+- [dompurify](https://github.com/cure53/DOMPurify), for HTML sanitization
 - [prism](http://prismjs.com/), for code-highlighting
 - [marked](https://github.com/chjj/marked), for markdown-rendering
 - [ansi_up](https://github.com/drudru/ansi_up), for ANSI-rendering
