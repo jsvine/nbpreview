@@ -28,7 +28,7 @@
     window.addEventListener('dragover', function (e) {
         e.stopPropagation();
         e.preventDefault();
-        e.dataTransfer.dropEffect = 'copy'; // Explicitly show this is a 
+        e.dataTransfer.dropEffect = 'copy';
         root.document.body.style.opacity = 0.5;
     }, false);
 
