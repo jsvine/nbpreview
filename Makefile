@@ -13,6 +13,10 @@ js/vendor:
 
 css/vendor:
 	curl -s $(cdnjs)KaTeX/0.12.0/katex.min.css > $@/katex.min.css
+	curl -sL https://github.com/KaTeX/katex-fonts/archive/master.zip > katex-fonts.zip
+	rm -rf $@/fonts
+	unzip -j katex-fonts.zip "katex-fonts-master/fonts/*" -d $@/fonts
+	rm -f katex-fonts.zip
 	@echo "💫 Manually download prism.css from 'https://prismjs.com/download.html#themes=prism&languages=markup+clike+javascript+julia+python+r'"
 
 vendor: js/vendor css/vendor
