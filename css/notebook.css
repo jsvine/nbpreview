@@ -33,6 +33,12 @@
     border-collapse: collapse;
 }
 
+.nb-notebook blockquote {
+    border-left: 5px solid #CCC;
+    margin-left: 0;
+    padding-left: 1em;
+}
+
 .nb-cell {
     position: relative;    
 }
